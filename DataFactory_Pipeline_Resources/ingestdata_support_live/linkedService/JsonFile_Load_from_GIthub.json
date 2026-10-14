@@ -1,0 +1,13 @@
+{
+    "name": "JsonFile_Load_from_GIthub",
+    "type": "Microsoft.DataFactory/factories/linkedservices",
+    "properties": {
+        "annotations": [],
+        "type": "HttpServer",
+        "typeProperties": {
+            "url": "https://raw.githubusercontent.com/Kishore-M6/Resource_Datasets_of_Brazilian_E-Commerce_Public_Dataset_by_Olist/refs/heads/main/inputfilenames.json",
+            "enableServerCertificateValidation": true,
+            "authenticationType": "Anonymous"
+        }
+    }
+}

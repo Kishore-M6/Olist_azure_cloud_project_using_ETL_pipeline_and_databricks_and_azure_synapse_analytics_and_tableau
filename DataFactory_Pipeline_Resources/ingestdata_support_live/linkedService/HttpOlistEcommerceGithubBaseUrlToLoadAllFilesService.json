@@ -1,0 +1,13 @@
+{
+    "name": "HttpOlistEcommerceGithubBaseUrlToLoadAllFilesService",
+    "type": "Microsoft.DataFactory/factories/linkedservices",
+    "properties": {
+        "annotations": [],
+        "type": "HttpServer",
+        "typeProperties": {
+            "url": "https://raw.githubusercontent.com/Kishore-M6/",
+            "enableServerCertificateValidation": true,
+            "authenticationType": "Anonymous"
+        }
+    }
+}

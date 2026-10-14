@@ -1,0 +1,1 @@
+select * from gold.final_olist_business_data_table;

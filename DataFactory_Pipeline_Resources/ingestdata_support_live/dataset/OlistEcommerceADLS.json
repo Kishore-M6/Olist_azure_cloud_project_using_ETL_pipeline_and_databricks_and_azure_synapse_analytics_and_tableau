@@ -1,0 +1,33 @@
+{
+    "name": "OlistEcommerceADLS",
+    "properties": {
+        "linkedServiceName": {
+            "referenceName": "AzureDataLakeStorageOlistEcommerce",
+            "type": "LinkedServiceReference"
+        },
+        "parameters": {
+            "dynamic_file_name": {
+                "type": "String"
+            }
+        },
+        "annotations": [],
+        "type": "DelimitedText",
+        "typeProperties": {
+            "location": {
+                "type": "AzureBlobFSLocation",
+                "fileName": {
+                    "value": "@dataset().dynamic_file_name",
+                    "type": "Expression"
+                },
+                "folderPath": "Bronze",
+                "fileSystem": "olistecommercecontainer"
+            },
+            "columnDelimiter": ",",
+            "escapeChar": "\\",
+            "firstRowAsHeader": true,
+            "quoteChar": "\""
+        },
+        "schema": []
+    },
+    "type": "Microsoft.DataFactory/factories/datasets"
+}

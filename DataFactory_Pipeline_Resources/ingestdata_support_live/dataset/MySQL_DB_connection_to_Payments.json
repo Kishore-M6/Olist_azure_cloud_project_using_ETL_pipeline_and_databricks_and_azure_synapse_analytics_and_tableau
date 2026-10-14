@@ -1,0 +1,16 @@
+{
+    "name": "MySQL_DB_connection_to_Payments",
+    "properties": {
+        "linkedServiceName": {
+            "referenceName": "MySQLOlistEcommercePaymentsLoadingService",
+            "type": "LinkedServiceReference"
+        },
+        "annotations": [],
+        "type": "MySqlTable",
+        "schema": [],
+        "typeProperties": {
+            "tableName": "`brazilian_olist_ecommerce_order_payments`"
+        }
+    },
+    "type": "Microsoft.DataFactory/factories/datasets"
+}

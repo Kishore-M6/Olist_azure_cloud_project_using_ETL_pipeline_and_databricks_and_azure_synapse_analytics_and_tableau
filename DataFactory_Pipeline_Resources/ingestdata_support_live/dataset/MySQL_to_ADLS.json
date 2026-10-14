@@ -1,0 +1,25 @@
+{
+    "name": "MySQL_to_ADLS",
+    "properties": {
+        "linkedServiceName": {
+            "referenceName": "ADLS_for_MYSQL_Linked_Service",
+            "type": "LinkedServiceReference"
+        },
+        "annotations": [],
+        "type": "DelimitedText",
+        "typeProperties": {
+            "location": {
+                "type": "AzureBlobFSLocation",
+                "fileName": "olist_order_payments_dataset.csv",
+                "folderPath": "Bronze",
+                "fileSystem": "olistecommercecontainer"
+            },
+            "columnDelimiter": ",",
+            "escapeChar": "\\",
+            "firstRowAsHeader": true,
+            "quoteChar": "\""
+        },
+        "schema": []
+    },
+    "type": "Microsoft.DataFactory/factories/datasets"
+}
